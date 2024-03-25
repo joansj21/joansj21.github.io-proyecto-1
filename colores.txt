@@ -1,0 +1,20 @@
+Azul Claro (Color principal):
+
+Hex: #5DADE2
+RGB: rgb(93, 173, 226)
+Azul Medio (Para acentos):
+
+Hex: #3498DB
+RGB: rgb(52, 152, 219)
+Azul Oscuro (Para texto o detalles):
+
+Hex: #2980B9
+RGB: rgb(41, 128, 185)
+Azul Celeste (Para fondos o secciones):
+
+Hex: #85C1E9
+RGB: rgb(133, 193, 233)
+Azul Marino (Para elementos de contraste):
+
+Hex: #1F618D
+RGB: rgb(31, 97, 141)
