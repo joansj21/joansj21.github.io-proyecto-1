@@ -60,3 +60,53 @@ body {
 
     
 }
+
+.message{
+
+  color: red;
+}
+
+.registrar{
+  text-align: center;
+  padding: 10px;
+ 
+   
+
+}
+
+/*telefono---------------------------------------------*/
+@media screen and (max-width: 600px) {
+  /* Estilos para el formulario */
+  .formulario {
+      width: 80%; /* Reducir el ancho del formulario */
+      margin: 20px auto; /* Centra el formulario horizontalmente y agrega un poco de margen en dispositivos móviles */
+      padding: 15px; /* Agrega un poco de relleno al formulario */
+      border-radius: 8px; /* Ajusta el radio del borde */
+  }
+
+  /* Estilos para los inputs */
+  .formulario input[type="password"],
+  .formulario input[type="email"],
+  .formulario input[type="text"] {
+      width: 100%;
+      padding: 8px; /* Reducir el relleno de los inputs */
+      margin: 6px 0; /* Reducir el margen de los inputs */
+      border-radius: 3px; /* Ajusta el radio del borde */
+  }
+
+  /* Estilos para el botón */
+  .formulario input[type="submit"] {
+      width: 100%; /* Hace que el botón ocupe todo el ancho del formulario */
+      padding: 10px; /* Reducir el relleno del botón */
+      margin-top: 12px; /* Aumenta un poco el margen superior del botón */
+      border-radius: 3px; /* Ajusta el radio del borde */
+  }
+
+  label{
+    font-size: 10px;
+
+  }
+  p{
+    font-size: 10px;
+  }
+}

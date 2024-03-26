@@ -1,4 +1,7 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 footer {
     position: fixed;
     bottom: 0;
@@ -28,4 +31,21 @@ footer a{
 footer p{
     color: #f2f2f2;
     
+}
+
+@media screen and (max-width: 900px) {
+
+    *{
+        padding: 0;
+        margin :0;
+        box-sizing: border-box; /*para que sea cajitas*/
+        
+    
+    
+    
+    }
+
+  
+
+
 }
