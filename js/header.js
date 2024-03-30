@@ -48,7 +48,7 @@ function generateHeaderIndex() {
     } else {
         // Agregar opciones disponibles solo para usuarios autenticados
         headerHTML += `
-            <li><a href="#">Agenda de citas</a></li>
+            <li><a href="html/scheduleAppointments.html">Agenda de citas</a></li>
             <li><a href="#" class="logoutIndex">Salir de sesión</a></li>`;
     }
 
@@ -89,7 +89,7 @@ function generateHeader() {
     } else {
         // Agregar opciones disponibles solo para usuarios autenticados
         headerHTML += `
-            <li><a href="#">Agenda de citas</a></li>
+            <li><a href="../html/scheduleAppointments.html">Agenda de citas</a></li>
             <li><a href="#" class="logout">Salir de sesión</a></li>`;
     }
 

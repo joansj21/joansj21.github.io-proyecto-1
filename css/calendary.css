@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
 :root {
   --primary-color: #f90a39;
   --text-color: #1d1d1d;
@@ -23,7 +23,7 @@ body {
 .calendar {
   width: 100%;
   max-width: 600px;
-  padding: 30px 20px;
+  padding: 30px ;
   border-radius: 10px;
   background-color: var(--bg-color);
 }
@@ -106,15 +106,3 @@ body {
   color: #ccc;
 }
 
-/* Credits */
-.credits a {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  color: #aaa;
-}
-.credits span {
-  color: var(--primary-color);
-}

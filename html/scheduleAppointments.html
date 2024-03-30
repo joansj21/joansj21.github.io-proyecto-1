@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Citas</title>
+
+    <link rel="stylesheet" href="../css/calendary.css" />
+    <link rel="stylesheet" href="../css/scheduleAppointments.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <script src="../js/header.js"></script>
+    
+    
+    <!-- Agregar enlaces a tus archivos CSS y JavaScript aquí -->
+       <!-- FONTAWESOME -->
+    <body>
+        <div id="headerContainer">
+
+            <script>
+                // Llamar a la función para generar el encabezado
+                generateHeader();
+            </script>
+        </div>
+        <main>
+            
+          
+            <section class="links">
+                
+                <h1>Agenda de Citas</h1>
+                
+                <ul>
+                   
+                    <li><a href="#">Programación de Citas </a></li>
+                    <li><a href="#">Modificación y Cancelación de Citas</a></li>
+                    <li><a href="#">Historial de Citas</a></li>
+                </ul>
+            </section>
+
+        
+
+            <section class="interactiveCalendar">
+                <!-- Aquí podría ir el calendario interactivo -->
+                <div class="calendar">
+                    <div class="header">
+                    <div class="month"></div>
+                    <div class="btns">
+                        <div class="btn today-btn">
+                        <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="weekdays">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    </div>
+                    <div class="days">
+                    </div>
+                </div>
+            </section>
+
+            <section id="emailReminders">
+                <!-- Aquí podría ir la configuración para enviar recordatorios de citas por correo electrónico -->
+            </section>
+
+            <section id="appointmentHistory">
+                <!-- Aquí podría ir el historial de citas del usuario -->
+            </section>
+
+            <section id="appointmentConfirmation">
+                <!-- Aquí podría ir la confirmación de citas -->
+            </section>
+        </main>
+
+        <footer>
+            <!-- Aquí podrías agregar información adicional o enlaces a tu sitio web -->
+        </footer>
+
+        <!-- Agregar tus scripts JavaScript al final del cuerpo para mejorar el rendimiento de carga -->
+        <script src="../js/calendary.js"></script>
+    </body>
+
+</html>
