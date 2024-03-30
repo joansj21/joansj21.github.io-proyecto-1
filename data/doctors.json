@@ -1,5 +1,6 @@
 [
     {
+        "id":"123",
         "nombre": "Dr. Juan Pérez",
         "especialidad": "Pediatría",
         "ubicacion_consulta": "Hospital Infantil ABC, Ciudad de México",
@@ -22,7 +23,7 @@
         ],
         "biografia": "El Dr. Juan Pérez es un pediatra con más de 10 años de experiencia en el cuidado de la salud infantil."
     },
-    {
+    {   "id":"132",
         "nombre": "Dra. Ana López",
         "especialidad": "Consulta General",
         "ubicacion_consulta": "Clínica Santa María, Madrid",
@@ -46,6 +47,7 @@
         "biografia": "La Dra. Ana López ofrece atención médica integral para pacientes de todas las edades."
     },
     {
+        "id":"101",
         "nombre": "Dr. Luis Martínez",
         "especialidad": "Psicología",
         "ubicacion_consulta": "Centro de Salud Mental, Buenos Aires",
@@ -69,6 +71,7 @@
         "biografia": "El Dr. Luis Martínez es un psicólogo con experiencia en terapia cognitivo-conductual."
     },
     {
+        "id":"102",
         "nombre": "Dra. Sofia Ramirez",
         "especialidad": "Nutrición",
         "ubicacion_consulta": "Clínica NutriSalud, Santiago de Chile",
@@ -92,6 +95,7 @@
         "biografia": "La Dra. Sofia Ramirez es una nutricionista comprometida con la salud y el bienestar de sus pacientes."
     },
     {
+        "id":"103",
         "nombre": "Dr. Carlos Fernández",
         "especialidad": "Consulta General",
         "ubicacion_consulta": "Centro Médico de la Ciudad, Bogotá",
@@ -115,6 +119,7 @@
         "biografia": "El Dr. Carlos Fernández ofrece atención médica de calidad y cuidado compasivo a sus pacientes."
     },
     {
+        "id":"104",
         "nombre": "Dra. Paula Martinez",
         "especialidad": "Pediatría",
         "ubicacion_consulta": "Hospital Universitario, Barcelona",
@@ -138,6 +143,7 @@
         "biografia": "La Dra. Paula Martinez es una pediatra dedicada al cuidado integral de la salud infantil."
     },
     {
+        "id":"105",
         "nombre": "Dr. José Ramírez",
         "especialidad": "Psicología",
         "ubicacion_consulta": "Consultorio Psicológico Integral, Lima",
@@ -161,6 +167,7 @@
         "biografia": "El Dr. José Ramírez es un psicólogo comprometido con el bienestar emocional y la salud mental de sus pacientes."
     },
     {
+        "id":"106",
         "nombre": "Dra. Laura Fernández",
         "especialidad": "Nutrición",
         "ubicacion_consulta": "Clínica NutriVida, Buenos Aires",
@@ -184,6 +191,7 @@
         "biografia": "La Dra. Laura Fernández es una nutricionista comprometida con la promoción de la salud y el bienestar."
     },
     {
+        "id":"107",
         "nombre": "Dr. Martín Gómez",
         "especialidad": "Consulta General",
         "ubicacion_consulta": "Centro Médico San Lucas, Santiago de Chile",
@@ -207,6 +215,7 @@
         "biografia": "El Dr. Martín Gómez ofrece atención médica integral y cuidado compasivo a sus pacientes."
     },
     {
+        "id":"208",
         "nombre": "Dra. Julia Díaz",
         "especialidad": "Pediatría",
         "ubicacion_consulta": "Hospital Infantil Los Ángeles, Madrid",
@@ -230,6 +239,7 @@
         "biografia": "La Dra. Julia Díaz es una pediatra con amplia experiencia en el cuidado de la salud infantil."
     },
     {
+        "id":"209",
         "nombre": "Dr. Diego González",
         "especialidad": "Psicología",
         "ubicacion_consulta": "Consultorio de Psicología Integral, Buenos Aires",
@@ -253,6 +263,7 @@
         "biografia": "El Dr. Diego González es un psicólogo comprometido con el bienestar emocional y la salud mental de sus pacientes."
     },
     {
+        "id":"210",
         "nombre": "Dra. Valentina Rodríguez",
         "especialidad": "Nutrición",
         "ubicacion_consulta": "Clínica NutriSalud, Buenos Aires",
@@ -276,6 +287,7 @@
         "biografia": "La Dra. Valentina Rodríguez es una nutricionista comprometida con la salud y el bienestar de sus pacientes."
     },
     {
+        "id":"221",
         "nombre": "Dr. Roberto Soto",
         "especialidad": "Consulta General",
         "ubicacion_consulta": "Centro Médico San Pedro, Lima",
@@ -299,6 +311,7 @@
         "biografia": "El Dr. Roberto Soto ofrece atención médica integral y cuidado compasivo a sus pacientes."
     },
     {
+        "id":"225",
         "nombre": "Dra. Carolina Herrera",
         "especialidad": "Pediatría",
         "ubicacion_consulta": "Hospital Pediátrico Los Andes, Santiago de Chile",
@@ -322,6 +335,7 @@
         "biografia": "La Dra. Carolina Herrera es una pediatra dedicada al cuidado integral de la salud infantil."
     },
     {
+        "id":"230",
         "nombre": "Dr. Alejandro Torres",
         "especialidad": "Psicología",
         "ubicacion_consulta": "Consultorio de Psicología Integral, Buenos Aires",
@@ -345,6 +359,7 @@
         "biografia": "El Dr. Alejandro Torres es un psicólogo comprometido con el bienestar emocional y la salud mental de sus pacientes."
     },
     {
+        "id":"277",
         "nombre": "Dra. Gabriela Martínez",
         "especialidad": "Nutrición",
         "ubicacion_consulta": "Clínica NutriVida, Buenos Aires",
@@ -368,6 +383,7 @@
         "biografia": "La Dra. Gabriela Martínez es una nutricionista comprometida con la promoción de la salud y el bienestar."
     },
     {
+        "id":"280",
         "nombre": "Dr. Manuel Sánchez",
         "especialidad": "Consulta General",
         "ubicacion_consulta": "Centro Médico San Pedro, Lima",
@@ -391,6 +407,7 @@
         "biografia": "El Dr. Manuel Sánchez ofrece atención médica integral y cuidado compasivo a sus pacientes."
     },
     {
+        "id":"300",
         "nombre": "Dra. Marta García",
         "especialidad": "Pediatría",
         "ubicacion_consulta": "Hospital Pediátrico Los Andes, Santiago de Chile",
@@ -414,6 +431,7 @@
         "biografia": "La Dra. Marta García es una pediatra dedicada al cuidado integral de la salud infantil."
     },
     {
+        "id":"305",
         "nombre": "Dr. Pedro López",
         "especialidad": "Psicología",
         "ubicacion_consulta": "Consultorio de Psicología Integral, Buenos Aires",
@@ -437,6 +455,7 @@
         "biografia": "El Dr. Pedro López es un psicólogo comprometido con el bienestar emocional y la salud mental de sus pacientes."
     },
     {
+        "id":"310",
         "nombre": "Dra. Andrea Ramírez",
         "especialidad": "Nutrición",
         "ubicacion_consulta": "Clínica NutriSalud, Buenos Aires",

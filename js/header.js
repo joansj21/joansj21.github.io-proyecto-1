@@ -39,7 +39,7 @@ function generateHeaderIndex() {
             <li><a href="html/aboutUS.html">Sobre nosotros</a></li>
             <li><a href="html/contact.html">Información de Contacto</a></li>
             <li><a href="html/faq.html">Preguntas frecuentes</a></li>
-            <li><a href="#">Búsqueda de médicos</a></li>
+            <li><a href="html/doctors.html">Búsqueda de médicos</a></li>
             <li><a href="data/Politicas.pdf" download="Politica de privacidad.pdf">Política de privacidad y términos de uso</a></li>`;
 
     // Agregar opción de "Registro / Inicio de sesión" si el usuario no está autenticado
@@ -80,7 +80,7 @@ function generateHeader() {
             <li><a href="../html/aboutUS.html">Sobre nosotros</a></li>
             <li><a href="../html/contact.html">Información de Contacto</a></li>
             <li><a href="../html/faq.html">Preguntas frecuentes</a></li>
-            <li><a href="#">Búsqueda de médicos</a></li>
+            <li><a href="../html/doctors.html">Búsqueda de médicos</a></li>
             <li><a href="../data/Politicas.pdf" download="Politica de privacidad.pdf">Política de privacidad y términos de uso</a></li>`;
 
     // Agregar opción de "Registro / Inicio de sesión" si el usuario no está autenticado

@@ -14,13 +14,20 @@
 
 }
 
+.filter{
+    
+    padding: 3%;
+
+}
+
 .listDoctors{
     
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 3%;
+ 
     padding: 3%;
+    
    
     
     
@@ -33,4 +40,12 @@ main{
     margin: 3%;
     background: rgb(202, 221, 234);
     opacity: 0.9;
+}
+
+.pagination{
+
+    text-align: center;
+    padding: 5%;
+    
+
 }

@@ -23,59 +23,35 @@
     </div>
 
     <main>
-
-        <div class="listDoctors">
-
-            <div class="doctorCard">
-                <img src="" alt="Imagen de ejemplo">
-                <h2>Título de la tarjeta</h2>
-                <p>Descripción corta de la tarjeta.</p>
-                <a href="#">Ver más</a>
-                
-            </div>
-            <div class="doctorCard">
-                <img src="" alt="Imagen de ejemplo">
-                <h2>Título de la tarjeta</h2>
-                <p>Descripción corta de la tarjeta.</p>
-                <a href="#">Ver más</a>
-                
-            </div>
-            <div class="doctorCard">
-                <img src="" alt="Imagen de ejemplo">
-                <h2>Título de la tarjeta</h2>
-                <p>Descripción corta de la tarjeta.</p>
-                <a href="#">Ver más</a>
-                
-            </div>
-            <div class="doctorCard">
-                <img src="" alt="Imagen de ejemplo">
-                <h2>Título de la tarjeta</h2>
-                <p>Descripción corta de la tarjeta.</p>
-                <a href="#">Ver más</a>
-                
-            </div>
-            <div class="doctorCard">
-                <img src="" alt="Imagen de ejemplo">
-                <h2>Título de la tarjeta</h2>
-                <p>Descripción corta de la tarjeta.</p>
-                <a href="#">Ver más</a>
-                
-            </div>
-
-          
-    
-
-     
-
+        <div class="filter">
+            <input type="text" id="nombre" placeholder="Nombre del médico" list="nameList">
+            <datalist class="nameList" id="nameList"> </datalist>
 
 
             
 
+            <select id="especialidad">
+                <option value="">Selecciona una especialidad</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Nutrición">Nutrición</option>
+                <option value="Pediatría">Pediatría</option>
+                <option value="Consulta General">Consulta General</option>
+            </select>
+            
+            <input type="text" id="ubicacion" placeholder="Ubicación geográfica" list="UbicationList">
+            <datalist class="UbicationList" id="UbicationList"> </datalist>
 
-         </div>
+            <input type="text" id="identificacion" placeholder="Identificación del médico" list="idList">
+            <datalist class="idList" id="idList"> </datalist>
 
 
+            <button id="btnBuscar">Buscar</button>
+        </div>
 
+        <div class="listDoctors"> </div>
+
+
+        <div class="pagination"></div>
 
     </main>
 
