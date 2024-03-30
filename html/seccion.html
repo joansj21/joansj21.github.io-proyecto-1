@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/formulario.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
     <script src="../js/header.js"></script>
+    <script src="../js/formLogin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 
     <title>Sesion</title>
 </head>
@@ -29,12 +32,12 @@
         <div class="formulario">
 
             <h2>Iniciar sesion</h2>
-            <form id="formulario" method="post">
+            <form id="formularioLogin" method="post">
 
                 <div >
 
-                    <label>Correo</label>
-                    <input id="mail" type="email" required>
+                    <label>Cédula: formato ##-####-####</label>
+                    <input id="idPerson" type="text" required>
 
                 </div>
             
@@ -68,8 +71,9 @@
    
 
 
-    <!-- Aquí se carga el pie de página -->
-    <iframe src="../html/footer.html" frameborder="0" width="100%" height="100%"></iframe>
+     <div class="footerContainer">
+        <iframe src="../html/footer.html" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
 </body>
 
     

@@ -1,0 +1,38 @@
+.frequentQuestion{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    background-color: #2980B9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
+    padding: 20px;
+    opacity: 0.8;
+    padding: 10px;
+    padding-top: 10px;
+  
+    margin-bottom: 20px;
+    border: 5px solid  #85C1E9;
+}
+
+h2{
+
+    text-align: center;
+
+}
+
+.question{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+ 
+
+}
+
+@media screen and (max-width: 600px) {
+
+    p,h3{
+      font-size: 10px;
+    }
+  }

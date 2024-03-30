@@ -1,5 +1,30 @@
 
-let usersList=[]
+
+const usersList=initUser();
+//const key = CryptoJS.enc.Hex.parse('000102030405060708090a0b0c0d0e0f');
+const key="LaKeyMasSegura"
+
+
+
+function initUser(){
+    // Recuperar la cadena JSON del localStorage
+let userListJSON = localStorage.getItem('userList');
+let userList=[]
+
+// Verificar si hay datos en el localStorage
+if (userListJSON) {
+    // Convertir la cadena JSON de userList a un array de JavaScript
+    userList = JSON.parse(userListJSON);
+
+  
+} 
+console.log(userList);
+
+    return userList
+
+}
+
+
 document.addEventListener("DOMContentLoaded",()=>{
 
     const formulario = document.getElementById("formulario")
@@ -82,13 +107,17 @@ function saveUser(id,name,lastName,phone,mail,password){
         lastName: lastName,
         phone: phone,
         mail: mail,
-        password: encryptedPassword // Guardar la contraseña encriptada
+        password: encryptedPassword  // Guardar la contraseña encriptada
     };
 
     usersList.push(user);
+    localStorage.setItem('userList', JSON.stringify(usersList));
 
 
-    console.log("lista",usersList)
+    
+
+
+    //console.log("userList",usersList)
 
 }
 
@@ -98,9 +127,9 @@ function saveUser(id,name,lastName,phone,mail,password){
 
 function encripPassword(pass){
 
-    let encrypted = CryptoJS.AES.encrypt(pass, pass);
+    let encrypted = CryptoJS.AES.encrypt(pass, key);
 
-    return encrypted
+    return encrypted.toString();
 }
 /*----------------------------------------------------- */
 
