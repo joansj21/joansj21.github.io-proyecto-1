@@ -1,0 +1,36 @@
+.doctorCard{
+
+
+    flex-basis: calc(90% - 10%); /* Establece el ancho de cada tarjeta */
+    margin-bottom: 20px; /* Espacio entre las filas */
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    opacity: 0.9;
+   
+
+
+
+}
+
+.listDoctors{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3%;
+    padding: 3%;
+   
+    
+    
+   
+
+}
+
+main{
+
+    margin: 3%;
+    background: rgb(202, 221, 234);
+    opacity: 0.9;
+}
