@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/formulario.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+    <script src="../js/header.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/updateAppointment.js"></script>
+    
+  
+
+    <title>Modificar cita</title>
+</head>
+
+
+<body>
+    <!-- Aquí se carga el encabezado -->
+    <div id="headerContainer">
+
+        <script>
+            // Llamar a la función para generar el encabezado
+            generateHeader();
+        </script>
+    </div>
+    
+    
+    <!-- Contenido del archivo principal -->
+      <div class="container">
+
+        <div class="formulario">
+
+            <h2>Modificar Cita</h2>
+            <form id="formularioCita" method="post">
+
+                <select id="especialidad" onchange="updateListDoctor()" required>
+                    <option value="">Selecciona una especialidad</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Nutrición">Nutrición</option>
+                    <option value="Pediatría">Pediatría</option>
+                    <option value="Consulta General">Consulta General</option>
+                </select>
+            
+                <input type="text" id="nombre" placeholder="Nombre del médico" list="nameList" required>
+                <datalist class="nameList" id="nameList"> </datalist>
+            
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            
+                <div class="button">
+                    <input id="botonIngresar" type="submit" value="Ingresar">
+                </div>
+                <p id="message" class="message"> </p>
+            </form>
+            
+       
+       
+
+
+        
+     </div>
+
+   
+
+
+     <div class="footerContainer">
+        <iframe src="../html/footer.html" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+</body>
+
+    
+
+</html>

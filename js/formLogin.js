@@ -31,10 +31,12 @@ if (userListJSON) {
 function saveUserCurrenly(id,password){
 
    
-    let user = {
+   /* let user = {
         idUser: id,
         password: password  // Guardar la contraseña encriptada
-    };
+    };*/
+
+    let user=usersList.filter(user =>  user.idUser==id);
 
   
     localStorage.setItem('userCurren', JSON.stringify(user));
