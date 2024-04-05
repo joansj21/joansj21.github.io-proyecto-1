@@ -64,3 +64,28 @@ main{
   }
   
   
+  @media screen and (max-width: 900px) {
+    .main {
+        font-size: 14px; /* Reducir el tamaño de fuente base */
+    }
+
+    .interactiveCalendar,
+    .links {
+        display: block; /* Cambiar a bloque para ocupar el ancho completo */
+        width: auto; /* Restablecer el ancho automático */
+        margin: 3% auto; /* Centro los elementos horizontalmente con un margen superior e inferior */
+    }
+
+    .links {
+        max-width: 100%; /* Eliminar el ancho máximo */
+    }
+
+    .links h1 {
+        font-size: 18px; /* Tamaño de fuente del encabezado */
+    }
+
+    .links li a {
+        font-size: 14px; /* Tamaño de fuente de los enlaces */
+        padding: 8px; /* Reducir el espacio interno */
+    }
+}

@@ -241,6 +241,54 @@ const limpiarCamposTexto = () =>{
     }
 
 
+    function enviarCorreo() {
+
+        const id = document.getElementById("idPerson").value.trim();
+
+        const mensajeElemento = document.getElementById('message');
+        
+       
+
+
+        uservalidate = usersList.filter(user=> user.idPerson===id)
+        
+        if(id!==""){
+            alert("entro")
+
+                if(uservalidate){
+
+                        const serviceID = 'default_service';
+                        const templateID = 'template_npj5zdd';
+
+                        const data = {
+                            from_name:"Clínica Árbol de Seda",
+
+                            to_email: "joansj21@gmail.com",//uservalidate.mail,
+                            message: '12349854'
+                        };
+                    
+                        emailjs.send(serviceID, templateID, data)
+                        .then(() => {
+                         //mensajeElemento.textContent = 'Send Email';
+                        
+                        }, (err) => {
+                            
+                        alert(JSON.stringify(err));
+                        console.log(JSON.stringify(err));
+                        });
+
+                    
+                }else{
+
+                    mensajeElemento.textContent = "El usuario no existe";
+
+                }
+                
+        }else{
+            mensajeElemento.textContent = "Dijite la Cédula";
+        }
+    }
+
 
 
 

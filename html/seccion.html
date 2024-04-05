@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/formulario.css">
+    
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/formulario.css">
 
     <script src="../js/header.js"></script>
     <script src="../js/formLogin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+    <!--para la recuperacion de contrasena-->
+            <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('T_LcsbXTDEvyVjfEy')
+        </script>
+
+
 
     <title>Sesion</title>
 </head>
@@ -59,6 +70,8 @@
 
 
             </form>
+            <button onclick="enviarCorreo()">Recuperar contreseña</button>
+
             <div class="registrar">
             <a href="../html/register.html">Registrar </a>
             </div>

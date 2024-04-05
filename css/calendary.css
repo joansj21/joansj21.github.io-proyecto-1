@@ -1,6 +1,6 @@
 
 :root {
-  --primary-color: #f90a39;
+  --primary-color:rgb(41, 128, 185);
   --text-color: #1d1d1d;
   --bg-color: #f1f1fb;
 }
@@ -60,7 +60,7 @@ body {
   transition: all 0.3s;
 }
 .calendar .header .btns .btn:hover {
-  background-color: #db0933;
+  background-color: rgb(41, 128, 185);
   transform: scale(1.05);
 }
 .weekdays {
@@ -74,7 +74,7 @@ body {
   font-size: 16px;
   font-weight: 600;
 }
-.days {
+.days  {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -106,3 +106,45 @@ body {
   color: #ccc;
 }
 
+.day.pending-appointment {
+  background-color: yellow;
+  color: #6809db;
+}
+
+.day.booked-appointment {
+  background-color: green;
+  color:  #6809db;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  .calendar {
+    padding: 20px; /* Reducir el relleno en dispositivos móviles */
+    border-radius: 0; /* Eliminar el redondeo de las esquinas */
+    max-width: none; /* Restablecer el ancho máximo */
+  }
+  
+  .calendar .header .month {
+    font-size: 20px; /* Reducir el tamaño del mes */
+  }
+  
+  .calendar .header .btns .btn {
+    width: 40px; /* Reducir el ancho de los botones */
+    height: 30px; /* Reducir la altura de los botones */
+    font-size: 14px; /* Reducir el tamaño del texto de los botones */
+  }
+  
+  .weekdays .day,
+  .days .day {
+    width: calc(100% / 7); /* Ajustar el ancho de los días */
+    font-size: 14px; /* Reducir el tamaño de fuente de los días */
+    height: 40px; /* Reducir la altura de los días */
+  }
+  
+  .days .day.pending-appointment,
+  .days .day.booked-appointment {
+    font-size: 14px; /* Reducir el tamaño de fuente de los días con citas */
+  }
+}

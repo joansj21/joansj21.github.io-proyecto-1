@@ -77,8 +77,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Filtrar las citas futuras y pasadas
     const currentDate = new Date();
-    const futureAppointments = citasList.filter(cita => cita.user.idUser === user.idUser && new Date(cita.date) > currentDate);
-    const pastAppointments = citasList.filter(cita => cita.user.idUser === user.idUser && new Date(cita.date) <= currentDate);
+    
+    
+  
+    const futureAppointments = citasList.filter(cita => cita.user[0].idUser === user[0].idUser && new Date(cita.date) >= currentDate);
+    
+    const pastAppointments = citasList.filter(cita => cita.user[0].idUser === user[0].idUser && new Date(cita.date) <= currentDate);
+
 
 
     console.log(" futuras",futureAppointments)
@@ -108,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mostrar citas pasadas
     pastAppointments.forEach(cita => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${cita.date}, ${cita.hour}, , ${cita.doctor.nombre} , ${cita.doctor.especialidad},  ${cita.state}`;
+        listItem.textContent = `${cita.date}, ${cita.hour} , ${cita.doctor.nombre} , ${cita.doctor.especialidad},  ${cita.state}`;
         pastAppointmentsList.appendChild(listItem);
     });
 });

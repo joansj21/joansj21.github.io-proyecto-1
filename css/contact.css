@@ -10,17 +10,33 @@
     opacity: 0.8;
     padding: 10px;
     padding-top: 10px;
-  
-    margin-bottom: 20px;
     border: 5px solid  #85C1E9;
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-top: 8%;
 }
 
+.InformationContact a{
+text-align: center;
+font-size: 30px;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 20px;
+
+}
 
 .map {
 
     border: 5px solid  #85C1E9;
     opacity: 1;
+  
+
     
+}
+
+.googleMaps{
+    width:100%;
+    height:100%;
 }
 
 
@@ -28,4 +44,38 @@
    text-align: center;
    background-color: rgb(255, 255, 255);
    border-radius: 10px;
+}
+
+.footerContainer{
+    background-color: #333;
+ 
+    text-align: center;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+  
+    margin-top: 10%;
+
+ 
+ }
+
+
+
+
+ @media only screen and (max-width: 900px) {
+    .InformationContact {
+        grid-template-columns: 1fr; 
+
+        margin-top: 25%; 
+
+       
+
+        
+    }
+   
+   
+
+    .footerContainer {
+        margin-top: 20%; 
+    }
 }
