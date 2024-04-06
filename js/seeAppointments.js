@@ -86,8 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    console.log(" futuras",futureAppointments)
-    console.log(" pasadas",pastAppointments)
 
     // Mostrar citas futuras
     futureAppointments.forEach(cita => {

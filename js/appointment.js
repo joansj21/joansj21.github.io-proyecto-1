@@ -94,9 +94,11 @@ document.addEventListener("DOMContentLoaded",()=>{
   
         doctorCita=validateDoctor(doctor,especiality);
 
+        
+
         if (doctorCita){
             
-            if(!validateAppointment(doctorCita,date,hour,user)){
+            if(!validateAppointment(doctorCita,date,hour,user)&& !validateUserDate(date,user)){
                 saveCita(doctorCita,date,hour,user)
             
             const mensajeElemento = document.getElementById('message');
@@ -137,12 +139,26 @@ const validateAppointment=(doctor,date,hour,user)=>{
             cita = listCita.find(citas => citas.date === date && citas.hour === hour && citas.doctor === doctor);
         }
 
+
+
         //alert(cita)
 
         return cita
  
 
 };
+
+const validateUserDate = (date, user) => {
+    // Verificar si existe alguna cita para el médico, fecha y hora especificados
+    console.log(user)
+    const citaExistente = listCita.find(cita => 
+        cita.date === date && 
+        cita.user[0].idUser === user[0].idUser
+    );
+
+    // Devolver true si ya existe una cita, de lo contrario devolver false
+    return citaExistente !== undefined;
+}
 
 const saveCita=(doctor,date,hour,user)=>{
 

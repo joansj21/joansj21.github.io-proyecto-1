@@ -43,7 +43,7 @@
         <div class="formulario">
 
             <h2>Iniciar sesion</h2>
-            <form id="formularioLogin" method="post">
+            <form id="formularioLogin" method="post" >
 
                 <div >
 
@@ -68,9 +68,13 @@
                     <input id="botonIngresar" type="submit" value="Ingresar">
                 </div>
 
+                <p id="message" class="message"> </p>
+
 
             </form>
-            <button onclick="enviarCorreo()">Recuperar contreseña</button>
+            <div class="registrar">
+                <a class="recuperar" href="#" onclick="enviarCorreo()">Recuperar contreseña</a>
+            </div>
 
             <div class="registrar">
             <a href="../html/register.html">Registrar </a>

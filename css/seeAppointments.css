@@ -73,3 +73,26 @@ main{
   
 
 }
+
+
+@media only screen and (max-width: 1200px) {
+
+
+  .footerContainer {
+      position: fixed;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+ 
+ 
+
+  .footerContainer {
+      margin-top: 20%; 
+      position: relative;
+  }
+}

@@ -2,7 +2,10 @@
 
 const usersList=initUser();
 const userCurren=null;
-const key="LaKeyMasSegura"
+const key="LaKeyMasSegura";
+let attempts=0;
+const lockoutTime = 30; 
+let block=true;
 
 
 
@@ -66,7 +69,7 @@ if (userCurrenStorege) {
 
   
 } 
-//console.log("usuario",userCurren);
+
 
     return userCurren
     }
@@ -78,77 +81,69 @@ if (userCurrenStorege) {
 
 
 
-document.addEventListener("DOMContentLoaded",()=>{
+    document.addEventListener("DOMContentLoaded", () => {
 
-    const formulario = document.getElementById("formularioLogin")
-
-    formulario.addEventListener("submit",(event) =>{
-        event.preventDefault();
+        const formulario = document.getElementById("formularioLogin");
+        const mensajeElemento = document.getElementById('message');
+        let attempts = 0;
+        const lockoutTime = 30; // Tiempo de bloqueo en segundos
         
 
-        let {id,password}= obtenerDatosFormulario();
-        
-    
-        
-
-       
-
-
-        console.log('ID:', id);
-        console.log(validateId(id));
-       
-        console.log('Contraseña:', password);
-
-
-        //console.log(validateUser(id,password));
-
-        if(validateUser(id,password)){
-
-            saveUserCurrenly(id,password);
-            window.location.href = '../index.html'; 
-
-        }
-
-
-        //saveUserCurrenly(id,password);
-
-        
-        //userCurrenly();
-        
-
-       
-
-
-       
-
-       
-        
-        
-       // const esValido = validateId(id)&&validateLastName(lastName)&&validateMail(mail)&&validateName(name)&&validatePassword(password,repeatPassword)&&validatePhone(phone)&&validateIdRepeat(id);
+     
+         
         
     
-        
-      /*   esValido ? manejarExito(): manejarError();
+                    formulario.addEventListener("submit", (event) => {
+                        
+                        event.preventDefault();
+
+
+                        if(block){
+                            
+                
+                                
+                            
+                                    let { id, password } = obtenerDatosFormulario();
+                            
+                                    if (validateUser(id, password)) {
+                                        saveUserCurrenly(id, password);
+                                        window.location.href = '../index.html';
+                                    } else {
+                                        attempts++;
+                                        if(attempts <= 2){
+                                        mensajeElemento.textContent = "Credenciales inválidas. Intentos restantes: " + (3 - attempts);
+                                        }
+                            
+                                        
+                                    if (attempts >= 3) {
+                                        block=false
+                                        const lockedOutTimestamp = Date.now();
+                                        const intervalId = setInterval(() => {
+                                            const remainingTime = lockoutTime - Math.floor((Date.now() - lockedOutTimestamp) / 1000);
+                                            mensajeElemento.textContent = `Demasiados intentos fallidos. La cuenta está bloqueada. Por favor, inténtelo de nuevo en  ${remainingTime} segundos.`;
+                                            if (remainingTime <= 0) {
+                                                clearInterval(intervalId);
+                                                attempts = 0;
+                                                mensajeElemento.textContent = "";
+                                                block=true
+                                            }
+                                        }, 1000);
+
+                                        
+                                        
+                                    }
+                                    }
+                        }
+                    });
+
+                
+    
 
 
 
-        if (esValido) {
-            saveUser(id,name,lastName,phone,mail,password);
-        
-        }*/
-
-        
-
-
-
-        
     });
-
-
-
-
-});
-
+    
+    
 
 
 function decryptPassword(encryptedPassword) {
@@ -211,36 +206,6 @@ const obtenerDatosFormulario=()=>{
 
 
 
-
-
-const manejarExito=()=>{
-    const mensajeElemento = document.getElementById('message');
-    mensajeElemento.textContent = "Registro Exitoso";
-   
-    limpiarCamposTexto();
-}
-
-
-const manejarError=()=>{
-    const mensajeElemento = document.getElementById('message');
-    mensajeElemento.textContent = "Error en los datos";
-    //limpiarCamposTexto();
-
-    
-   
-}
-
-const limpiarCamposTexto = () =>{
-
-
-    const campos = document.querySelectorAll("#formulario input[type='email'], #formulario input[type='password'],#formulario input[type='text']");
-    campos.forEach((campo) => campo.value = '');
-    
-    
-
-    }
-
-
     function enviarCorreo() {
 
         const id = document.getElementById("idPerson").value.trim();
@@ -248,12 +213,15 @@ const limpiarCamposTexto = () =>{
         const mensajeElemento = document.getElementById('message');
         
        
+       
+        uservalidate = usersList.filter(user=> user.idUser==id)
+  
 
-
-        uservalidate = usersList.filter(user=> user.idPerson===id)
         
         if(id!==""){
-            alert("entro")
+          
+
+            console.log("usuario ",uservalidate)
 
                 if(uservalidate){
 
@@ -263,9 +231,11 @@ const limpiarCamposTexto = () =>{
                         const data = {
                             from_name:"Clínica Árbol de Seda",
 
-                            to_email: "joansj21@gmail.com",//uservalidate.mail,
+                            to_email: uservalidate[0].mail,
                             message: '12349854'
                         };
+
+                        console.log(data)
                     
                         emailjs.send(serviceID, templateID, data)
                         .then(() => {
@@ -276,6 +246,8 @@ const limpiarCamposTexto = () =>{
                         alert(JSON.stringify(err));
                         console.log(JSON.stringify(err));
                         });
+
+                        mensajeElemento.textContent = "Correo enviado";
 
                     
                 }else{

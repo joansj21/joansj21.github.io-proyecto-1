@@ -32,6 +32,7 @@ function generateHeaderIndex() {
                 <ul>
 
                     <li><a href="#">Servicios </a></li>
+                    <li><a href="html/doctorRequest.html">Perfil Medico</a> </li>
     `;
 
     // Agregar opciones disponibles para todos los usuarios
@@ -49,7 +50,7 @@ function generateHeaderIndex() {
         // Agregar opciones disponibles solo para usuarios autenticados
         headerHTML += `
             <li><a href="html/scheduleAppointments.html">Agenda de citas</a></li>
-            <li><a href="#" class="logoutIndex">Salir de sesión</a></li>`;
+            <li><a href="html/service.html" class="logoutIndex">Salir de sesión</a></li>`;
     }
 
     // Continuar con el cierre del contenido del encabezado
@@ -72,7 +73,7 @@ function generateHeader() {
             <nav>
                 <ul>
                     <li><a href="../index.html">inicio</a></li>
-                    <li><a href="#">Servicios </a></li>
+                    <li><a href="../html/service.html">Servicios </a></li>
     `;
 
     // Agregar opciones disponibles para todos los usuarios

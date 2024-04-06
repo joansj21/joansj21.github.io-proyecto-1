@@ -59,6 +59,24 @@ padding: 20px;
  
  }
 
+ @media only screen and (max-width: 1200px) {
+    .InformationContact {
+        grid-template-columns: 1fr; 
+
+        margin-top: 25%; 
+
+       
+
+        
+    }
+   
+   
+
+    .footerContainer {
+        position: fixed;
+    }
+}
+
 
 
 
@@ -77,5 +95,6 @@ padding: 20px;
 
     .footerContainer {
         margin-top: 20%; 
+        position: relative;
     }
 }

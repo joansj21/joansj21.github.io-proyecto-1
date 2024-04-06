@@ -46,6 +46,7 @@ body {
 }
 
 .formulario input[type="submit"]{
+  text-align: center;
     background-color: rgb(41, 128, 185);
     color: #fff;
     padding:  10px 20px;
@@ -78,6 +79,7 @@ body {
    
 
 }
+
 
 .footerContainer{
   background-color: #333;
@@ -126,7 +128,7 @@ body {
  }
 
  /* Estilos para el botón */
- .formulario input[type="submit"] {
+ .formulario input[type="submit"] , .recuperar{
      width: 100%; /* Hace que el botón ocupe todo el ancho del formulario */
      padding: 10px; /* Reducir el relleno del botón */
      margin-top: 12px; /* Aumenta un poco el margen superior del botón */
