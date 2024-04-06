@@ -37,7 +37,7 @@ function generateHeaderIndex() {
 
     // Agregar opciones disponibles para todos los usuarios
     headerHTML += `
-            <li><a href="html/aboutUS.html">Sobre nosotros</a></li>
+            <li><a href="html/about.html">Sobre nosotros</a></li>
             <li><a href="html/contact.html">Información de Contacto</a></li>
             <li><a href="html/faq.html">Preguntas frecuentes</a></li>
             <li><a href="html/doctors.html">Búsqueda de médicos</a></li>
@@ -78,7 +78,7 @@ function generateHeader() {
 
     // Agregar opciones disponibles para todos los usuarios
     headerHTML += `
-            <li><a href="../html/aboutUS.html">Sobre nosotros</a></li>
+            <li><a href="../html/about.html">Sobre nosotros</a></li>
             <li><a href="../html/contact.html">Información de Contacto</a></li>
             <li><a href="../html/faq.html">Preguntas frecuentes</a></li>
             <li><a href="../html/doctors.html">Búsqueda de médicos</a></li>
