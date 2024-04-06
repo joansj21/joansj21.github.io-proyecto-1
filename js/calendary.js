@@ -48,21 +48,21 @@ const daysContainer = document.querySelector(".days"),
 const citasListUSer = initCita();
 
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Augosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Deciembre",
 ];
 
-const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
 
 // get current date
 const date = new Date();
@@ -73,76 +73,7 @@ let currentMonth = date.getMonth();
 // get current year
 let currentYear = date.getFullYear();
 
-// function to render days
-/*
-function renderCalendar() {
-  // get prev month current month and next month days
-  date.setDate(1);
-  const firstDay = new Date(currentYear, currentMonth, 1);
-  const lastDay = new Date(currentYear, currentMonth + 1, 0);
-  const lastDayIndex = lastDay.getDay();
-  const lastDayDate = lastDay.getDate();
-  const prevLastDay = new Date(currentYear, currentMonth, 0);
-  const prevLastDayDate = prevLastDay.getDate();
-  const nextDays = 7 - lastDayIndex - 1;
 
-  // update current year and month in header
-  month.innerHTML = `${months[currentMonth]} ${currentYear}`;
-
-  // update days html
-  let days = "";
-
-  // prev days html
-  for (let x = firstDay.getDay(); x > 0; x--) {
-    days += `<div class="day prev">${prevLastDayDate - x + 1}</div>`;
-  }
-
-  // current month days
-  for (let i = 1; i <= lastDayDate; i++) {
-    // check if its today then add today class
-    if (
-      i === new Date().getDate() &&
-      currentMonth === new Date().getMonth() &&
-      currentYear === new Date().getFullYear()
-    ) {
-      // if date month year matches add today
-      days += `<div class="day today">${i}</div>`;
-    } else {
-      //else dont add today
-      days += `<div class="day ">${i}</div>`;
-    }
-  }
-
-  // next MOnth days
-  for (let j = 1; j <= nextDays; j++) {
-    days += `<div class="day next">${j}</div>`;
-  }
-
-  // run this function with every calendar render
-  hideTodayBtn();
-  daysContainer.innerHTML = days;
-
-  // Seleccionar todos los elementos con la clase "day"
-  const allDays = document.querySelectorAll(".day");
-
-  // Agregar un event listener a cada día del calendario
-  allDays.forEach(day => {
-    day.addEventListener("click", () => {
-      // Obtener el número del día seleccionado
-      const selectedDay = parseInt(day.textContent);
-
-      // Obtener el mes y el año actuales
-      const selectedMonth = currentMonth + 1; // Sumar 1 porque los meses en JavaScript van de 0 a 11
-      const selectedYear = currentYear;
-
-      // Aquí puedes abrir un formulario o una ventana emergente para que el usuario ingrese los detalles de la cita
-      // Por ejemplo:
-      //alert(`¡Has seleccionado la fecha ${selectedDay}/${selectedMonth}/${selectedYear} para pedir una cita!`);
-
-      //window.open('../html/scheduleCalendaryPopUP.html', 'popupWindow', 'width=400,height=300');
-    });
-  });
-}*/
 
 
 /*--------------------------------------------------- */
@@ -214,7 +145,7 @@ function renderCalendar() {
   hideTodayBtn();
   daysContainer.innerHTML = dias;
 
-  console.log("Contenido HTML generado:", dias);
+  //console.log("Contenido HTML generado:", dias);
 
   // Seleccionar todos los elementos con la clase "day"
   const todosLosDias = document.querySelectorAll(".day");
@@ -230,12 +161,6 @@ function renderCalendar() {
       const añoSeleccionado = currentYear;
 
       console.log(`Día seleccionado: ${diaSeleccionado}, Mes: ${mesSeleccionado}, Año: ${añoSeleccionado}`);
-
-      // Aquí puedes abrir un formulario o una ventana emergente para que el usuario ingrese los detalles de la cita
-      // Por ejemplo:
-      //alert(`¡Has seleccionado la fecha ${diaSeleccionado}/${mesSeleccionado}/${añoSeleccionado} para pedir una cita!`);
-
-      //window.open('../html/scheduleCalendaryPopUP.html', 'popupWindow', 'width=400,height=300');
     });
   });
 }

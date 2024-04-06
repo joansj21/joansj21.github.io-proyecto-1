@@ -185,7 +185,6 @@ function validateIdRepeat(idPerson) {
 
   
 
-//const validatePassword=(mail)=>/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,11}$/.test(mail);
 
 
 
