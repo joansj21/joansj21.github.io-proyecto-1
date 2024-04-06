@@ -121,30 +121,30 @@ body {
 
 @media screen and (max-width: 900px) {
   .calendar {
-    padding: 20px; /* Reducir el relleno en dispositivos móviles */
-    border-radius: 0; /* Eliminar el redondeo de las esquinas */
-    max-width: none; /* Restablecer el ancho máximo */
+    padding: 20px; 
+    border-radius: 0; 
+    max-width: none; 
   }
   
   .calendar .header .month {
-    font-size: 20px; /* Reducir el tamaño del mes */
+    font-size: 20px; 
   }
   
   .calendar .header .btns .btn {
-    width: 40px; /* Reducir el ancho de los botones */
-    height: 30px; /* Reducir la altura de los botones */
-    font-size: 14px; /* Reducir el tamaño del texto de los botones */
+    width: 40px; 
+    height: 30px; 
+    font-size: 14px; 
   }
   
   .weekdays .day,
   .days .day {
-    width: calc(100% / 7); /* Ajustar el ancho de los días */
-    font-size: 14px; /* Reducir el tamaño de fuente de los días */
-    height: 40px; /* Reducir la altura de los días */
+    width: calc(100% / 7); 
+    font-size: 14px; 
+    height: 40px; 
   }
   
   .days .day.pending-appointment,
   .days .day.booked-appointment {
-    font-size: 14px; /* Reducir el tamaño de fuente de los días con citas */
+    font-size: 14px; 
   }
 }
